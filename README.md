@@ -22,7 +22,7 @@ It's pretty simple, actually\! The agent just runs in a continuous loop, sending
 
 ## ✨ The Agent's Cool Toolkit
 
-Everything this agent does is strictly confined to the working directory set in `config.py` (which is `calculator/` by default).
+Everything this agent does is strictly confined to the working directory set in `config.py` (which is `calculator` by default).
 
 | Tool Name | Purpose | What It Does | Key Info |
 | :--- | :--- | :--- | :--- |
@@ -50,7 +50,7 @@ git clone https://github.com/SourabhGuptaGit/AI-CodeForge.git
 cd AI-CodeForge
 python -m venv .venv
 .venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 **Linux/Mac:**
 ```bash
@@ -58,7 +58,7 @@ git clone https://github.com/SourabhGuptaGit/AI-CodeForge.git
 cd AI-CodeForge
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### 2\. Environment Setup
@@ -126,6 +126,3 @@ This helps you keep an eye on how big the conversation history is getting.
 ### Smart Error Handling
 
 If the agent tries to do something impossible (like reading a file that doesn't exist), the app grabs the error and sends it *back* to the AI. This lets the model realize its mistake and **self-correct**—like "Whoops, that file wasn't there\! Let me try listing the directory first." Pretty smart\!
-
-```
-```
